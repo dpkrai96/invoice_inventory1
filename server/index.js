@@ -104,7 +104,7 @@ app.get('/', (req, res) => {
     res.send('SERVER IS RUNNING')
   })
 
-const DB_URL = process.env.DB_URL
+const DB_URL = process.env.DB_MONGODB_URI
 const PORT = process.env.PORT || 5000
 
 mongoose.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true})
